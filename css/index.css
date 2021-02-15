@@ -1,3 +1,8 @@
-main > div{
-    background: white;
+.profile-section {
+    background: black;
+    padding: 1vh;
+}
+
+.profile-img {
+    border-radius: 100%;
 }
