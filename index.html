@@ -1,62 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXEL NOVO</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <!-- Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <title>Lorem, ipsum.</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
-    <header class="container">
-        
-        <div class="row">
 
-            <div class="col-4">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-                <a href="/index.html" class="h1 navbar-brand">4tsel</a>
+        <div class="container">
+
+            <a class="navbar-brand" href="/">Axel Novo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </nav>
 
-            <div class="col-8">
+    <!-- HEADER -->
+    <header class="main-header">
 
-                <div class="row justify-content-end">
+        <div class="background-overlay text-white py-5">
 
+            <div class="container">
 
+                <div class="row">
+
+                    <div class="col-md-6 text-center justify-content-center align-self-center">
+
+                        <h1>Programador Web Full Stack</h1>
+                        <p>Hola mundo! Soy Axel Novo y soy un apasionado por la tecología!</p>
+                        <a href="#about" class="btn btn-outline-secondary btn-lg text-white">Leer más</a>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <img src="img/code.jpg" alt="Imagen de código." class="img-fluid d-none d-sm-block">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container">
+    <!-- SKILLS -->
+    <section class="py-5 text-center">
 
-        <div class="row">
+        <div class="container">
 
-            <div class="col-10 profile-section rounded">
+            <h1>Estos son mis skills</h1>
 
-                <div class="row justify-content-center">
+            <div class="row">
 
-                    <div class="col-10">
+                <div class="col-md-3">
 
-                        <img src="./img/profile.jpg" alt="" class="img-fluid profile-img">
+                    <div class="card text-center border-secondary">
+
+                        <div class="card-body">
+
+                            <h3>Lenguajes</h3>
+                            <ul class="list-unstyled">
+                                <li><img src="https://img.icons8.com/color/24/000000/javascript.png" />Javascript</li>
+                                <li><img src="https://img.icons8.com/color/24/000000/typescript.png" />Typescript</li>
+                                <li><img src="https://img.icons8.com/color/24/000000/java-coffee-cup-logo.png" />Java
+                                </li>
+                                <li><img src="https://img.icons8.com/color/24/000000/python.png" />Python</li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class="profile-description">
+                </div>
+                <div class="col-md-3">
 
-                        <h2>Hello World!</h2>
-                        <p>My name is Axel Novo (a.k.a. 4tsel) and I'm a Full Stack Web Developer.</p>
-                        <p>I'm from Buenos Aires and I'm also studying Computer Engineering at UNTREF</p>
+                    <div class="card text-center bg-secondary text-white">
+
+                        <div class="card-body">
+
+                            <h3>Backend</h3>
+                            <ul class="list-unstyled">
+                                <li><img src="https://img.icons8.com/color/24/000000/nodejs.png" />Node.js</li>
+                                <li><img src="https://expressjs.com/images/favicon.png" width="20">Express.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="card text-center border-secondary">
+
+                        <div class="card-body">
+
+                            <h3>Frontend</h3>
+                            <ul class="list-unstyled">
+                                <li><img src="https://img.icons8.com/color/24/000000/html-5--v1.png" />HTML5</li>
+                                <li><img src="https://img.icons8.com/color/24/000000/css3.png" />CSS3</li>
+                                <li><img src="https://img.icons8.com/color/24/000000/bootstrap.png" />Bootstrap 4.6/5.0
+                                </li>
+                                <li><img src="https://img.icons8.com/color/24/000000/react-native.png" />React.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="card text-center bg-secondary text-white">
+
+                        <div class="card-body">
+
+                            <h3>Databases / APIs</h3>
+                            <ul class="list-unstyled">
+                                <li><img src="https://img.icons8.com/color/24/000000/mysql-logo.png" />MySQL</li>
+                                <li><img src="https://img.icons8.com/color/24/000000/mongodb.png" />MongoDB</li>
+                                <li><img src="https://img.icons8.com/color/24/000000/npm.png" />Axios</li>
+                                <li><img src="https://img.icons8.com/color/24/000000/api-settings.png" />Rest</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- ABOUT -->
+    <section class="bg-light text-center" id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="m-5">
+
+                    <h1>Sobre Mí</h1>
+                    <p>Mi nombre es Axel Novo y soy de Buenos Aires, Argentina. Soy un Desarrollador Web Full Stack
+                        recibido de Digital House y también estudio Ingeniería en Computación en la Universidad Nacional
+                        de Tres de Febrero (UNTREF).
+                    </p>
+                    <p>Soy un apasionado por la tecnología y sobre todo la programación. Toda idea que se me cruza por
+                        la cabeza trato de plasmarla en código de la mejor manera posible. <strong>¡El único límite es
+                            uno mismo!</strong></p>
+                    <p>Me caracterizo por ser buen compañero a la hora de trabajar en equipo, tener paciencia para
+                        resolver problemáticas que se presenten y también tener unas incesantes ganas de aprender y
+                        seguir adquiriendo nuevos skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container text-center p-5">
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Dónde aprendiste todos esos skills?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Todo el paquete de Desarrollo Web Full Stack (Javascript, Node.js, Express.js, HTML5, CSS3,
+                            Bootstrap 4.6, React y MySQL / Axios) lo aprendí gracias a un curso dictado por DIGITAL
+                            HOUSE, en colaboración con FUNDACIÓN FORMAR.</p>
+                        <p>El desarrollo en Java, y técnicas como OOP (Object-Oriented Programming o Programación
+                            Orientada a Objetos) y TDD (Test-Driven Development o Desarrollo Guiado por Pruebas) lo
+                            aprendí en la UNTREF (Universidad Nacional de Tres de Febrero).</p>
+                        <p>Python lo estoy aprendiendo gracias a un curso de POLO TIC Misiones, el cual sigue en curso
+                            en el que no sólo aprenderé el manejo del lenguaje sino también Desarrollo Web Full Stack.
+                        </p>
+                        <p>El manejo de MongoDB lo aprendí en un principio de forma autodidacta, ya que había aprendido
+                            a manejar una base de datos relacional (MySQL). Decidí aprender MongoDB por su sencillez con
+                            el manejo de datos.</p>
+                        <p>Typescript lo estoy aprendiendo de manera autodidacta, para mejorar mis skills en la
+                            Programación Orientada a Objetos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Cómo podés demostrar los skills?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>La idea es tener por lo menos un proyecto por tecnología aprendida. A medida que los vaya
+                            terminando, dejaré info en la parte de <a href="#proyectos">proyectos</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cuáles son tus expectativas laborales?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Aunque suene muy trillada esta respuesta, mis expectativas son poder desenvolverme de la mejor
+                            manera posible en un equipo de trabajo, apoyándome en mis compañeros y al mismo tiempo poder
+                            ayudarlos.</p>
+                        <p>Además lo que busco a la hora de trabajar en relación de dependencia es poder aplicar todos
+                            mis conocimientos y técnicas aprendidas, y al mismo tiempo poder capacitarme
+                            para poder crecer como profesional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Tenés experiencia en relación de dependencia?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Actualmente, no. Estoy en constante búsqueda laboral. Confío mucho en mis conocimientos, sólo
+                            tengo que esperar que alguien del otro lado confíe también.</p>
+                        <p>Mientras espero que se dé, no bajo los brazos y sigo capacitándome y actualizándome para cuando se dé pueda dar lo mejor de mí. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="team text-center" id="proyectos">
+
+        <div class="container p-5">
+
+            <h1 class="text-white">Mis Proyectos</h1>
+            <p class="text-white">En esta sección voy a dejar todos mis proyectos en los que apliqué mis skills previamente mencionados, con links a sus respectivos repositorios y/o links en donde estén deployados.</p>
+
+            <div class="row">
+
+                <!-- PROJECT -->
+                <div class="col-lg-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <img src="img/example.jpg" class="img-fluid" alt="Imagen de ejemplo">
+                            <h3>Example One</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-reddit-alien"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fas fa-cloud"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <img src="img/example.jpg" class="img-fluid" alt="Imagen de ejemplo">
+                            <h3>Example Two</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-reddit-alien"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fas fa-cloud"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <img src="img/example.jpg" class="img-fluid" alt="Imagen de ejemplo">
+                            <h3>Example Three</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-reddit-alien"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fas fa-cloud"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <img src="img/example.jpg" class="img-fluid" alt="Imagen de ejemplo">
+                            <h3>Example Four</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-github-square"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fab fa-reddit-alien"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+
+                                    <a href="#" target="_blank">
+                                        <i class="fas fa-cloud"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="bg-light py-5" id="contacto">
+
+        <div class="container">
+
+            <h3 class="text-center">¡Contáctame!</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+            <div class="row justify-content-center">
+                
+                <div class="col-lg-6">
+
+                    <div class="list-group">
+
+                        <a href="https://www.linkedin.com/in/4tsel/" class="list-group-item list-group-item-action" aria-current="true"><i class="fab fa-linkedin"></i> LinkedIn: Axel Novo.</a>
+                        <a href="mailto:axelbnovo@gmail.com" class="list-group-item list-group-item-action"><i class="fas fa-at"></i> E-Mail: axelbnovo@gmail.com </a>
+                        <a href="https://wa.link/ifmnb4" class="list-group-item list-group-item-action"><i class="fas fa-mobile-alt"></i> Teléfono: +54 9 11 2450 8528</a>
+                        <a href="https://github.com/4tsel" class="list-group-item list-group-item-action"><i class="fab fa-github-square"></i> Github: 4tsel.</a>
+                        <a href="https://steamcommunity.com/id/4tsel/" class="list-group-item list-group-item-action"><i class="fab fa-steam-square"></i> ¿Jugamos un rato? Este es mi Steam.</a>
+                      </div>
+                </div>
+                <div class="col-lg-3 align-self-center">
+
+                    <img src="img/astronaut.jpg" alt="Un astronauta">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container p-3 text-white text-center">
+
+            <p>Copyright &copy; 2021</p>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
